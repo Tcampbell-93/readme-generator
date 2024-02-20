@@ -52,7 +52,7 @@ function renderLicenseLink(license) {
 
 function renderLicenseSection(license) {      // function to render the License section
   if (license) {
-    return `##License
+    return `## License
 This project is licensed under ${license}.
 `;
 }else{
@@ -64,7 +64,7 @@ function generateMarkdown(data) {       // generates the markdown language and p
   return `# ${data.title}
 ` + renderLicenseBadge(data.license) + `
 
-##Table of Contents
+## Table of Contents
 [Description](#description)
 [Installations](#installation)
 [Usage](#usage)
@@ -73,15 +73,15 @@ function generateMarkdown(data) {       // generates the markdown language and p
 [Testing](#tests)
 [Questions](#questions)
 
-##Description
+## Description
 ${data.description}
 <a name="description"></a>
 
-##Installation
+## Installation
 ${data.installation}
 <a name="installation"></a>
 
-##Usage
+## Usage
 ${data.usage}
 <a name="usage"></a>
 
@@ -90,15 +90,15 @@ renderLicenseLink(data.license) +
 `
 <a name="license"></a>
 
-##Contributors
+## Contributors
 ${data.contribution}
 <a name="contribution"></a>
 
-##Testing
+## Testing
 ${data.tests}
 <a name="tests"></a>
 
-##Questions
+## Questions
 Here is a link to my github: https://github.com/${data.username}
 If you have any questions please email me at ${data.email}
 <a name="questions"></a>
