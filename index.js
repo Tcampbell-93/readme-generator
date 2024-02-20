@@ -44,6 +44,13 @@ const questions = [
         type: 'input',
         name: 'email',
         message: 'What is your email address?'
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What type of license do you have for your project?',
+        choices: ['MIT license', 'GNU Lesser General Public License v3.0', 'Mozilla Public License 2.0',
+         'GNU Affero General Public License v3.0', 'Apache License 2.0', 'GNU General Public License v3.0', 'Unlicensed']
     }
 ];
 
